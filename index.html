@@ -44,7 +44,7 @@
                   />
                 </a>
         
-                <a class="navbar-brand text-white" href="#">Viajes Chile</a>
+                <a class="navbar-brand text-white" href="#carrousel">Viajes Chile</a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -61,23 +61,23 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav" style="text-align: end;">
                   <li class="nav-item">
-                    <a class="nav-link text-white" aria-disabled="true" href="#">Inicio</a>
+                    <a class="nav-link text-white" aria-disabled="true" href="#carrousel">Inicio</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link text-white" aria-disabled="true" href="#"
+                    <a class="nav-link text-white" aria-disabled="true" href="#quienes"
                       >Quienes Somos</a
                     >
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link text-white" aria-disabled="true" href="#"
+                    <a class="nav-link text-white" aria-disabled="true" href="#destacados"
                       >Destacados</a
                     >
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link text-white" aria-disabled="true" href="#"
+                    <a class="nav-link text-white" aria-disabled="true" href="#contacto"
                       >Contacto</a>
                   </li>
                   </ul>
@@ -94,7 +94,7 @@
 <!--Carousel-->
 <header>
 <section>
-<div class="row">
+<div class="row" id="carrousel">
     <div id="carouselExample" class="carousel slide p-0">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -131,13 +131,13 @@
 </header>
 
 <!--¿Quienes Somos?-->
-<section id="quienes-somos">
-    <div class="container pb-6 px-6"> 
+<section id="quienes">
+    <div class="container pb-6 px-6 d-none d-md-block"> 
         <h2 class="text-white color-qs fw-light text-center text-uppercase my-5 border-bottom border-info pb-4">¿Quiénes somos?</h2>
         
   <!--Primer texto-->
         <div class="row">
-              <div class="col-md-4 col-lg-4 col-xl-4">
+              <div class="d-none d-md-block col-lg-4 col-xl-4">
                 <div class="card border-0 bg-transparent" style="width: 100%;">
                     <i class="fas fa-solid fa-plane bg-info text-center py-1 " style="height: 2.5rem;"></i>
                     <div class="card-body p-0">
@@ -155,7 +155,7 @@
             </div>
   
   <!--Segundo texto-->
-            <div class="col-md-4 col-lg-4 col-xl-4">
+            <div class="d-none d-md-block col-lg-4 col-xl-4">
                 <div class="card border-0 bg-transparent" style="width: 100%;">
                     <div class="card-body p-0">
                       <p class="card-text text-white fs-6 fw-light p-3">Lorem ipsum dolor sit amet consectetur
@@ -173,7 +173,7 @@
             </div>
       
   <!--Tercer texto-->
-                      <div class="col-md-4 col-lg-4 col-xl-4">
+                      <div class="d-none d-md-block col-lg-4 col-xl-4">
                 <div class="card border-0 bg-transparent" style="width: 100%;">
                     <i class="fas fa-solid fa-route bg-info text-center py-1 " style="height: 2.5rem;"></i>
                     <div class="card-body p-0">
@@ -194,7 +194,7 @@
   </section>
   
 <!-- Destacados -->
-<section>
+<section id="destacados"">
   <div>
 
     <h2 class="text-white text-center text-uppercase m-5 fw-light">Destacados</h2>
@@ -262,7 +262,7 @@
 </section>
 
 <!-- CONTACTO -->
-<section>
+<section id="contacto">
 
   <div>
 
@@ -307,10 +307,10 @@
         <div class="col-6 col-md-9 col-lg-9 text-center">
 
           <div class="d-flex justify-content-center justify-content-md-end gap-2">
-            <i class="fa-brands fa-2x fa-square-github text-white"></i>
-            <i class="fa-brands fa-2x fa-linkedin text-white"></i>
-            <i class="fa-brands fa-2x fa-twitter text-white"></i>
-            <i class="fa-brands fa-2x fa-square-facebook text-white"></i>
+            <a href="https://github.com/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-2x fa-square-github text-white"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-2x fa-linkedin text-white"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-decoration-none"><i class="fa-brands fa-2x fa-twitter text-white"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-2x fa-square-facebook text-white"></i></a>
           </div>
 
         </div>
@@ -320,7 +320,10 @@
   </section>
 </footer>
 
-<!-- //// -->
+<!-- JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- BS y JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
